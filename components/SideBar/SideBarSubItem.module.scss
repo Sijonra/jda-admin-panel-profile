@@ -1,0 +1,62 @@
+@import '../../styles/bundle.scss';
+
+.sub-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 5px 16px 5px 53px;
+	width: 223px;
+	max-height: 32px;
+	margin-left: 0.75rem;
+	margin-right: 0.75rem;
+	border-radius: 0.5rem;
+	word-break: break-word;
+	line-height: 1.188rem;
+	color: var(--phoenix-navbar-vertical-link-color);
+	cursor: pointer;
+	@include font;
+
+	&__arrow {
+		position: absolute;
+		top: 30%;
+		width: 5px;
+		height: 10px;
+		color: var(--phoenix-navbar-vertical-dropdown-indicator-color);
+		margin-right: 6px;
+		transition: all 0.4s ease;
+	}
+
+	&__title {
+		margin-left: 18px;
+		font-size: 13px;
+		font-weight: 600;
+		word-break: break-word;
+		line-height: 1.188rem;
+	}
+
+	&__sub-item {
+		position: relative;
+		width: 223px;
+		padding: 5px 16px 5px 53px;
+		margin-left: 3rem;
+		margin-right: 0.75rem;
+		border-radius: 0.5rem;
+		word-break: break-word;
+		line-height: 1.188rem;
+		font-size: 13px;
+		font-weight: 600;
+		word-break: break-word;
+		line-height: 1.188rem;
+		color: var(--phoenix-navbar-vertical-link-color);
+		cursor: pointer;
+		@include font;
+
+		&:hover {
+			background-color: var(--phoenix-navbar-vertical-link-hover-bg);
+		}
+	}
+
+	&:hover {
+		background-color: var(--phoenix-navbar-vertical-link-hover-bg);
+	}
+}

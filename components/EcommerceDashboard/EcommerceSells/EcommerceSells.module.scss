@@ -1,0 +1,162 @@
+@import '../../../styles/bundle.scss';
+
+.ecommerce-sells {
+	width: 50%;
+	padding-right: 12px;
+
+	@media (max-width: 1400px) {
+		width: 100%;
+	}
+}
+
+.ecommerce-business {
+	margin-bottom: 40px;
+
+	&__title {
+		@include font;
+		font-size: 31px;
+		font-weight: 800;
+		line-height: 31px;
+		margin-bottom: 8px;
+		color: var(--phoenix-1100);
+
+		@media (max-width: 990px) {
+			font-size: 26px;
+		}
+	}
+	&__subtitle {
+		@include font;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 16px;
+		color: var(--phoenix-700-rgb);
+		opacity: 0.9;
+	}
+
+	&::after {
+		margin-top: 20px;
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: var(--phoenix-gray-200);
+	}
+}
+
+.business-list {
+	@include list-reset;
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+
+	li {
+		display: flex;
+
+		@media (max-width: 990px) {
+			margin: 24px;
+		}
+
+		&:not(:last-child) {
+			margin-right: 24px;
+		}
+	}
+
+	&__icons {
+		margin-right: 12px;
+		width: 50px;
+		height: 42px;
+
+		svg {
+			width: 50px;
+			height: 42px;
+		}
+	}
+
+	&__title {
+		@include font;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 20px;
+		color: var(--phoenix-1100);
+	}
+
+	&__subtitle {
+		@include font;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 19px;
+		color: rgba(var(--phoenix-700-rgb), var(--phoenix-text-opacity)) !important;
+	}
+
+	@media (max-width: 990px) {
+		flex-wrap: wrap;
+	}
+}
+
+.sells {
+	&-heading {
+		display: flex;
+		justify-content: space-between;
+		@include font;
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 19px;
+		margin-bottom: 30px;
+
+		&__select {
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 19px;
+			width: 32%;
+			max-height: 33px;
+			appearance: none;
+			margin-top: 12px;
+			padding-top: 0.375rem;
+			padding-bottom: 0.375rem;
+			padding-left: 1rem;
+			border: 1px solid var(--phoenix-input-border-color);
+			border-radius: 0.375rem;
+			color: var(--phoenix-900);
+			background-color: var(--phoenix-input-bg);
+			background-image: url('/assets/DashboardImg/arrowdown.svg');
+			background-position: right 16px center !important;
+			background-repeat: no-repeat;
+			background-size: 9px 12px;
+
+			@media (max-width: 990px) {
+				width: 50%;
+			}
+
+			&:focus {
+				border-color: #3874ff;
+				outline: 0;
+				box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0),
+					0 0 0 0.25rem rgba(56, 116, 255, 0.25);
+			}
+		}
+
+		@media (max-width: 990px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__title {
+		font-size: 25px;
+		line-height: 25px;
+		margin-bottom: 5px;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		line-height: 19px;
+	}
+}
+
+.sells-charts {
+	min-height: 330px;
+	width: 100%;
+	canvas {
+		@include font;
+		padding-left: 4px !important;
+	}
+}

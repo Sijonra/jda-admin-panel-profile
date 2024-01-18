@@ -1,0 +1,45 @@
+@import '../../../styles/bundle.scss';
+
+.label-approved {
+	@include font;
+	width: 91px;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	border-radius: 0.25rem;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	background-color: var(--phoenix-label-approved-bg);
+	color: var(--phoenix-badge-color-approved);
+	border: 1px solid var(--phoenix-label-approved-border);
+
+	svg {
+		margin-left: 4px;
+	}
+
+	span {
+		margin-top: 2px;
+	}
+}
+
+.label-pending {
+	@include font;
+	width: 81px;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	border-radius: 0.25rem;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	background-color: var(--phoenix-badge-pending-bg);
+	border: 1px solid var(--phoenix-badge-border-color);
+	color: var(--phoenix-badge-color-pending);
+
+	svg {
+		margin-left: 4px;
+	}
+}

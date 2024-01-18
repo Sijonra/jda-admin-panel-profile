@@ -1,0 +1,11 @@
+.main {
+	padding: 96px 40px 0 40px;
+	margin-left: 254px;
+
+	@media (max-width: 990px) {
+		margin-left: 0;
+	}
+}
+.page {
+	position: relative;
+}

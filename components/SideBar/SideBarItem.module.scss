@@ -1,0 +1,92 @@
+@import '../../styles/bundle.scss';
+
+.sidebar-item {
+	padding-left: 1rem;
+	padding-top: 0.35rem;
+	padding-bottom: 0.35rem;
+	width: 223px;
+	max-height: 32px;
+	margin-left: 0.75rem;
+	margin-right: 0.75rem;
+	border-radius: 0.5rem;
+	word-break: break-word;
+	line-height: 1.188rem;
+	color: var(--phoenix-navbar-vertical-link-color);
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	@include font;
+
+	&:hover {
+		background-color: var(--phoenix-navbar-vertical-link-hover-bg);
+	}
+
+	&--collapse {
+		margin-left: 0;
+		padding: 0;
+		.sidebar-item__arrow {
+			display: none;
+		}
+		.sidebar-item__title {
+			display: none;
+		}
+	}
+
+	cursor: pointer;
+	&__arrow {
+		visibility: hidden;
+		width: 5px;
+		height: 10px;
+		color: var(--phoenix-navbar-vertical-dropdown-indicator-color);
+		margin-right: 6px;
+		transition: all 0.4s ease;
+
+		&--active {
+			visibility: visible;
+		}
+	}
+
+	&__icon {
+		margin-right: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__title {
+		padding-top: 0.125rem;
+		font-size: 13px;
+		font-weight: 600;
+		word-break: break-word;
+		line-height: 1.188rem;
+		white-space: nowrap;
+		color: var(--phoenix-navbar-vertical-link-color);
+	}
+
+	&--active {
+		color: var(--phoenix-navbar-vertical-link-active-color) !important;
+		background-color: var(--phoenix-navbar-vertical-link-hover-bg);
+
+		.sidebar-item__arrow {
+			transform: rotate(90deg);
+		}
+
+		.sidebar-item__title {
+			color: var(--phoenix-navbar-vertical-link-active-color) !important;
+		}
+	}
+}
+
+.sidebar-item__content {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+	height: 0;
+
+	&--active {
+		opacity: 1;
+		visibility: visible;
+		height: auto;
+	}
+}
