@@ -1,16 +1,9 @@
-import { ReactElement } from 'react';
-
 import IMG1 from '@/public/assets/Reviews/1.png';
 import IMG2 from '@/public/assets/Reviews/2.png';
 import IMG3 from '@/public/assets/Reviews/3.png';
 import IMG4 from '@/public/assets/Reviews/4.png';
 import IMG5 from '@/public/assets/Reviews/5.png';
 import IMG6 from '@/public/assets/Reviews/6.png';
-
-import Avatar6 from '@/public/assets/Reviews/avatar6.webp';
-import Avatar3 from '@/public/assets/Reviews/avatar3.webp';
-import Avatar2 from '@/public/assets/Reviews/avatar2.webp';
-import Avatar from '@/public/assets/Reviews/avatar.webp';
 
 export type Titem = {
 	id: number;

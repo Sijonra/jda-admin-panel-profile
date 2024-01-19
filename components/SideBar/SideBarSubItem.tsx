@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useState } from 'react';
 import styles from './SideBarSubItem.module.scss';
 import classNames from 'classnames/bind';
 import LabelNew from '../common/LabelNew';

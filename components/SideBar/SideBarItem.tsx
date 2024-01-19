@@ -4,7 +4,6 @@ import React, { FC, useState } from 'react';
 import styles from './SideBarItem.module.scss';
 import classNames from 'classnames/bind';
 import SideBarSubItem from './SideBarSubItem';
-import { TSubItem } from '@/types/types';
 import Image from 'next/image';
 import LabelActive from '../common/LabelActive';
 import LabelNew from '../common/LabelNew';

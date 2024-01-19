@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 interface ILabelNew {}
 
-const LabelNew: FC<ILabelNew> = ({}) => {
+const LabelNew: FC<ILabelNew> = () => {
 	const collapseOpen = useSideBarCollapse((state) => state.isOpen);
 
 	return (

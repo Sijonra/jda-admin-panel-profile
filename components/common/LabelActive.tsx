@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 interface ILabelActive {}
 
-const LabelActive: FC<ILabelActive> = ({}) => {
+const LabelActive: FC<ILabelActive> = () => {
 	return (
 		<span className={cx('label-active')}>
 			<svg

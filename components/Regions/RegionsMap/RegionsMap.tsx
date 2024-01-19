@@ -1,6 +1,6 @@
 import React from 'react';
 import './RegionsMap.scss';
-import 'react-leaflet';
+// import 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import useTheme from '@/hooks/useTheme';
