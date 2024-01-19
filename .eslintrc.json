@@ -1,3 +1,44 @@
 {
-  "extends": "next/core-web-vitals"
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"tsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint", "react", "react-hooks", "jsx-a11y", "import"],
+	"extends": [
+		"next",
+		"next/core-web-vitals",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended",
+		"prettier"
+	],
+	"rules": {
+		"quotes": [
+			"error",
+			"single",
+			{
+				"allowTemplateLiterals": true
+			}
+		],
+		"semi": ["error", "always"],
+		"no-duplicate-imports": [
+			"error",
+			{
+				"includeExports": true
+			}
+		],
+		"react/no-unescaped-entities": "off",
+		"@next/next/no-page-custom-font": "off",
+		"@typescript-eslint/no-explicit-any": "warn"
+	},
+	"ignorePatterns": [
+		"public/scripts/*.js",
+		"config/*",
+		"next.config.js",
+		"public/~partytown",
+		"env/stylelint"
+	]
 }
