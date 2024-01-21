@@ -1,7 +1,6 @@
 import style from './page.module.scss';
 import classNames from 'classnames/bind';
 import '../styles/themes.css';
-
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import SideBar from '@/components/SideBar/SideBar';
