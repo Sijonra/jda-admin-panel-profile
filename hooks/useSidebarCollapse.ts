@@ -6,7 +6,7 @@ interface ISideBarCollapse {
 }
 
 const useSideBarCollapse = create<ISideBarCollapse>((set) => ({
-	isOpen: true,
+	isOpen: false,
 	toggleScrollBarCollapse: () => set((state) => ({ isOpen: !state.isOpen })),
 }));
 
