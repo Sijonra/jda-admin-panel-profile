@@ -1,0 +1,55 @@
+@import '../../../styles/bundle.scss';
+
+.nav {
+	width: 559px;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		@include font;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 19px;
+		@include link-reset;
+		color: var(--phoenix-gray-800);
+		width: 279px;
+		padding: 19px 0;
+		padding-left: 8px;
+		display: flex;
+		border-bottom: 1px solid var(--phoenix-gray-200);
+		border-right: 1px solid var(--phoenix-gray-200);
+		transition: 0.3s;
+
+		&:hover,
+		.hover-primary:focus {
+			color: #3874ff;
+			text-decoration: underline;
+		}
+
+		svg {
+			margin-right: 8px;
+			width: 20px;
+			height: 16px;
+		}
+	}
+
+	&__communities {
+		padding-left: 24px;
+		border-right: unset;
+	}
+
+	&__events {
+		padding-left: 24px;
+		border-right: unset;
+	}
+
+	&__settings {
+		padding-left: 24px;
+		border-right: unset;
+		border-bottom: unset;
+	}
+
+	&__games {
+		border-bottom: unset;
+	}
+}

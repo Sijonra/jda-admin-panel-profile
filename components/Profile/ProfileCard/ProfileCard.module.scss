@@ -3,9 +3,10 @@
 .card {
 	position: relative;
 	width: 559px;
+	background-color: var(--phoenix-card-bg);
 	border: 1px solid var(--phoenix-card-border-color);
 	border-radius: 10px;
-	background-color: var(--phoenix-card-bg);
+	margin-bottom: 32px;
 
 	&__header {
 		position: relative;
