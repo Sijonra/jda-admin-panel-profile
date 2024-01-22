@@ -5,6 +5,8 @@ import classNames from 'classnames/bind';
 
 import ProfileMessage from './ProfileMessage/ProfileMessage';
 
+import { messages } from './messages.data';
+
 const cx = classNames.bind(style);
 
 const ProfileMessages = () => {
@@ -18,7 +20,18 @@ const ProfileMessages = () => {
 					<ButtonPoints />
 				</div>
 			</h4>
-			<ProfileMessage />
+			{messages.map((message) => {
+				return (
+					<ProfileMessage
+						key={message.id}
+						id={message.id}
+						author={message.author}
+						avatar={message.avatar}
+						message={message.message}
+						isOnline={message.isOnline}
+					/>
+				);
+			})}
 		</div>
 	);
 };

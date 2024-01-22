@@ -2,22 +2,23 @@ import style from './ProfileMessage.module.scss';
 
 import classNames from 'classnames/bind';
 
-import PNGStanly from '@/public/assets/ProfilesIcons/stanly.webp';
 import ProfileIcon from '@/components/common/ProfileIcon/ProfileIcon';
+import { Imessage } from '../messages.data';
+import { FC } from 'react';
 
 const cx = classNames.bind(style);
 
-const ProfileMessage = () => {
+interface IProfileMessage extends Imessage {}
+
+const ProfileMessage: FC<IProfileMessage> = ({ author, message, avatar }) => {
 	return (
 		<div className={cx('message')}>
 			<div className={cx('message__photo')}>
-				<ProfileIcon src={PNGStanly} height={32} width={32} isOnline />
+				<ProfileIcon src={avatar} height={32} width={32} isOnline />
 			</div>
 			<div className={cx('message__content')}>
-				<p className={cx('message__author')}>Stanly Drinkwater</p>
-				<p className={cx('message__text')}>
-					When you gonna pay me back, don’t leave me hanging
-				</p>
+				<p className={cx('message__author')}>{author}</p>
+				<p className={cx('message__text')}>{message}</p>
 			</div>
 		</div>
 	);
