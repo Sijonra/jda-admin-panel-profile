@@ -1,4 +1,4 @@
-@import '../styles/bundle.scss';
+@import '@/styles/bundle.scss';
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -367,7 +367,8 @@ button {
 }
 
 * {
-	box-sizing: border-box !important;
+	@include font;
+	box-sizing: border-box;
 }
 
 body {
