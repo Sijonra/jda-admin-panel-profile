@@ -1,5 +1,18 @@
 .icon {
+	position: relative;
+
 	img {
 		border-radius: 50%;
+	}
+
+	&--online {
+		width: 25%;
+		height: 22%;
+		position: absolute;
+		bottom: 15%;
+		right: 3%;
+		border-radius: 100%;
+		border: 1px solid var(--phoenix-avatar-status-border-color);
+		background-color: var(--phoenix-success);
 	}
 }
