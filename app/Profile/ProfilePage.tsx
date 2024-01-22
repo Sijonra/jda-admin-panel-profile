@@ -10,15 +10,13 @@ const cx = classNames.bind(style);
 
 const Profile = () => {
 	return (
-		<>
-			<div className={cx('page')}>
-				<Header />
-				<SideBar />
-				<main className={cx('main')}>
-					<ProfileLeft />
-				</main>
-			</div>
-		</>
+		<div className={cx('page')}>
+			<Header />
+			<SideBar />
+			<main className={cx('main')}>
+				<ProfileLeft />
+			</main>
+		</div>
 	);
 };
 
